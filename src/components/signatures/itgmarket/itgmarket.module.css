@@ -1,0 +1,48 @@
+.dotLine {
+    border: none;
+    border-top: 1px dotted #0090c6;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 60%;
+}
+
+.dashes {
+    font-size: 10px;
+    color: #000;
+}
+
+.itgLogo {
+    margin-left: -15px
+}
+
+.rolepos {
+    margin-bottom: -15px !important;
+    color: #000;
+}
+
+.tableFonts {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.centerP {
+    margin-top: 15px;
+}
+
+.mail {
+    margin-right: 10px;
+}
+
+.website {
+    margin-right: 5px;
+}
+
+.companyName {
+    margin-right: 9px;
+}
+
+.headerSection {
+color: #000;
+}
