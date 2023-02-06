@@ -15,11 +15,8 @@ const ITGSignature: React.FC = () => {
         <table cellSpacing='0' cellPadding='0' id='signature'>
           <tbody className={styles.tableFonts}>
             <tr>
-              <td>
-                <img
-                  className={styles.itgLogo}
-                  src='https://i.imgur.com/2dBhl4G.png'
-                />
+              <td className={styles.position}>
+                <img className={styles.itgLogo} src='/Logo.png' width={140} />
               </td>
               <td>
                 <p className={styles.centerP}>
@@ -34,12 +31,12 @@ const ITGSignature: React.FC = () => {
                 <p className={styles.paragraphFive}>
                   <span className={styles.website}>Website:</span>
                   <a href='#' className={styles.linkOne} target='_blank'>
-                    itgmarket.net
+                    itgsolution.net
                   </a>
                 </p>
                 <p className={styles.paragraphFive}>
                   <span className={styles.companyName}>Company:</span>
-                  <span>ITGMarket</span>
+                  <span>ITGSolution</span>
                 </p>
               </td>
             </tr>

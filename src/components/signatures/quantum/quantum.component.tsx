@@ -39,7 +39,7 @@ const QTMSignature: React.FC = () => {
 
                 <p className={styles.styleNine}>
                   <a href='#' className={styles.ahref}>
-                    https://quantummarket.net
+                    https://qmmarket.net
                   </a>
                 </p>
               </td>
