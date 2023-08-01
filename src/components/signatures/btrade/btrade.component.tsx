@@ -3,16 +3,24 @@ import styles from './btrade.module.css';
 
 const BTradeSignature = () => {
   return (
-    <div className={`${styles.card} ${styles.signatureContainer}`}>
+    <div
+      className={`${styles.card} ${styles.signatureContainer}`}
+      id='signature_container'
+    >
       <div id={styles.namePositionContainer}>
         <p className={styles.headerSection}>
-          <strong className={styles.name} id={styles.prepreparedName}>
+          <strong className={styles.name} id='preparedName'>
             Adam Varga
           </strong>
         </p>
         <p className={`${styles.position} rolepos`}>Senior Account Manager</p>
       </div>
-      <table cellSpacing='0' cellPadding='0' className={styles.tableContainer}>
+      <table
+        cellSpacing='0'
+        cellPadding='0'
+        className={styles.tableContainer}
+        id='signature'
+      >
         <tbody>
           <tr>
             <td className={styles.logo}>

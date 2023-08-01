@@ -1,4 +1,4 @@
-import styles from './itgmarket.module.css'
+import styles from './itgmarket.module.css';
 
 const ITGSignature: React.FC = () => {
   return (
@@ -45,7 +45,7 @@ const ITGSignature: React.FC = () => {
         <hr className={styles.dotLine} />
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default ITGSignature
+export default ITGSignature;
