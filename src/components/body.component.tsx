@@ -1,17 +1,18 @@
-import { SetStateAction, useState } from 'react'
-import styles from './body.module.css'
-import ITGSignature from './signatures/itgmarket/itgmarket.component'
-import LCSignature from './signatures/lifecoin/lifecoin.component'
-import QTMSignature from './signatures/quantum/quantum.component'
+import { SetStateAction, useState } from 'react';
+import styles from './body.module.css';
+import ITGSignature from './signatures/itgmarket/itgmarket.component';
+import LCSignature from './signatures/lifecoin/lifecoin.component';
+import QTMSignature from './signatures/quantum/quantum.component';
+import BTradeSignature from './signatures/btrade/btrade.component';
 
 const Body: React.FC = () => {
-  const [company, setCompany] = useState('quantummarket')
+  const [company, setCompany] = useState('quantummarket');
 
   const handleChange = (event: {
-    target: { value: SetStateAction<string> }
+    target: { value: SetStateAction<string> };
   }) => {
-    setCompany(event?.target?.value)
-  }
+    setCompany(event?.target?.value);
+  };
 
   return (
     <section className='section'>
@@ -110,6 +111,16 @@ const Body: React.FC = () => {
                   />
                   &nbsp;ITGMarket
                 </label>
+                <label className='radio'>
+                  <input
+                    type='radio'
+                    name='company'
+                    value='btrade'
+                    checked={company === 'btrade'}
+                    onChange={handleChange}
+                  />
+                  &nbsp;BTrade
+                </label>
               </span>
             </h3>
             {company === 'quantummarket' ? (
@@ -118,6 +129,8 @@ const Body: React.FC = () => {
               <LCSignature />
             ) : company === 'itgmarket' ? (
               <ITGSignature />
+            ) : company === 'btrade' ? (
+              <BTradeSignature />
             ) : null}
             {/* <h3 className='title'>Signatures:</h3>
             <div className='controls'>
@@ -133,6 +146,6 @@ const Body: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
-export default Body
+  );
+};
+export default Body;
